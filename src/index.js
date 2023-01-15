@@ -41,6 +41,8 @@ function inputHandler(event) {
       .catch(error => {
         console.log(error);
         Notify.failure('Oops, there is no country with that name.');
+        clearCountryList();
+        clearCountryInfo();
       });
   }
 }
